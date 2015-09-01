@@ -10,7 +10,7 @@ namespace Hello_World.Controllers
     
     public class Future:Controller
     {
-      {
+      
           public ActionResult Index()
           {
                // Add action logic here
