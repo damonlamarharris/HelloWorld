@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Hello_World.Controllers;
+using System.Web.UI.WebControls;
 
 namespace Hello_World.Tests
 {
@@ -11,8 +12,13 @@ namespace Hello_World.Tests
         public void TestMethod1()
         {
             var controller = new UnitTest1();
-            var result = controller.Details(2) as ViewResult;
+            var result = TestMethod1(2) as ViewResult;
             Assert.AreEqual("Details", result.ViewName);
+        }
+
+        private ViewResult TestMethod1(int p)
+        {
+            throw new NotImplementedException();
         }
     }
 }
